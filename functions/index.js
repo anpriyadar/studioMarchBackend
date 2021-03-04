@@ -20,7 +20,7 @@ exports.sendMail = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
     const mailOptions = {
       from: "Studio March<noreply@studiomarch.com>",
-      to: "apriyadarshi5@gmail.com",
+      to: "info@thestudiomarch.com",
       subject: `Studio March Enquiry/Message from - ${req.body.Name}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
